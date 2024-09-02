@@ -1,15 +1,15 @@
 require("dotenv").config();
 const express = require("express");
 const sequelize = require("./db.js");
+const models = require("./models/models");
 const cors = require("cors");
+const router = require("./routes/index.js");
 
 const PORT = process.env.PORT || 5000;
 const app = express();
-app.use(cors())
-app.use(express.json()) // для парсинга json формата
-app.get("/", (req, res) => {
-  res.status(200).json({ message: "WORKING" });
-});
+app.use(cors());
+app.use(express.json()); // для парсинга json формата
+app.use("/api", router);
 
 const start = async () => {
   try {

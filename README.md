@@ -56,3 +56,26 @@
 - **type / product**: `one-to-many`
 - **category / product**: `one-to-many`
 - **type / category**: `many-to-many`
+
+## Создание Роутеров и Контроллеров
+- **User**: регистрация, логирование, проверка
+    - `userRoutes.js`
+    - `userController.js`
+- **Basket**: создавать корзину, получать корзину
+    - `basketRoutes.js`
+    - `basketController.js`
+- **Product**: создавать продукт, получать продукт, получать продукты
+    - `productRoutes.js`
+    - `productController.js`
+- **Info**: создавать инфо, получать инфо
+    - `infoRoutes.js`
+    - `infoController.js`
+- **InfoTitle**: создавать инфотайтл, получать инфотайтл
+    - `infotitleRoutes.js`
+    - `infotitleController.js`
+- **Type**: создавать тип, получать тип, получать типы
+    - `typeRoutes.js`
+    - `typeController.js`
+- **Category**: создание категории, получение категории, получения категорий
+    - `categoryRoutes.js`
+    - `categoryController.js`

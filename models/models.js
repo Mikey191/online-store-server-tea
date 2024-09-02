@@ -64,7 +64,7 @@ Product.hasMany(Info, { as: "info" });
 Info.belongsTo(Product);
 
 Info.hasOne(InfoTitle);
-InfoTitle(Info);
+InfoTitle.belongsTo(Info);
 
 Type.hasMany(Product);
 Product.belongsTo(Type);
